@@ -13,7 +13,7 @@ public class Main {
             while (true) {
                 try {
                     final Socket socket = serverSocket.accept();
-                    
+
                     final BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
                     final OutputStream outputStream = socket.getOutputStream();
